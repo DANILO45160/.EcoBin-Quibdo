@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>EcoBin Quibdó | Contacto</title><link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script></head>
+<body>
+<header class="encabezado"><a class="marca" href="index.html"><span class="logo">♻</span> EcoBin <span>Quibdó</span></a><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button><nav class="menu" id="menuPrincipal"><a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="proyecto.html">El proyecto</a><a href="funcionamiento.html">Funcionamiento</a><a href="galeria.html">Galería</a><a class="activo" href="contacto.html">Contacto</a></nav></header>
+<main>
+<section class="cabecera-pagina"><p class="etiqueta">HABLEMOS</p><h1>Contacto y comentarios</h1><p>Comparte una idea para mejorar el cuidado de los espacios públicos de Quibdó.</p></section>
+<section class="seccion dos-columnas">
+  <div><h2>Cuéntanos tu propuesta</h2><p>Este formulario es demostrativo y no envía datos a internet. Al enviarlo, mostrará un mensaje de confirmación en esta página.</p>
+  <div class="panel-verde"><h3>EcoBin Quibdó</h3><p>Proyecto STEM · Área de Informática · Grado 1106</p><p>Docentes: Lady Mena Palma y Lewis Mendoza Palacios.</p></div></div>
+  <form class="formulario tarjeta" id="formContacto" novalidate>
+    <label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required minlength="2">
+    <label for="correo">Correo electrónico (opcional)</label><input id="correo" name="correo" type="email" placeholder="nombre@ejemplo.com">
+    <label for="tipo">¿Qué te interesa?</label><select id="tipo" name="tipo"><option value="idea">Compartir una idea</option><option value="prototipo">Conocer el prototipo</option><option value="ambiente">Cuidado ambiental</option></select>
+    <label for="comentario">Mensaje</label><textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu comentario..." required minlength="5"></textarea>
+    <button class="boton" type="submit">Enviar comentario</button>
+    <p id="respuestaFormulario" class="respuesta" aria-live="polite"></p>
+  </form>
+</section>
+</main><footer class="pie"><p>© 2026 EcoBin Quibdó · Proyecto STEM · Grado 1106</p></footer></body></html>
