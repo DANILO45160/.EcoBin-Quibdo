@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>EcoBin Quibdó | Funcionamiento</title><link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script></head>
+<body>
+<header class="encabezado"><a class="marca" href="index.html"><span class="logo">♻</span> EcoBin <span>Quibdó</span></a><button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button><nav class="menu" id="menuPrincipal"><a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="proyecto.html">El proyecto</a><a class="activo" href="funcionamiento.html">Funcionamiento</a><a href="galeria.html">Galería</a><a href="contacto.html">Contacto</a></nav></header>
+<main>
+<section class="cabecera-pagina"><p class="etiqueta">ENTRADA · PROCESO · SALIDA</p><h1>¿Cómo funcionaría EcoBin?</h1><p>El siguiente esquema explica la idea del prototipo. La demostración interactiva es una simulación educativa.</p></section>
+<section class="seccion">
+  <div class="pasos">
+    <article class="paso"><span>01</span><div class="icono">📏</div><h2>Entrada</h2><p>El sensor ultrasónico mide la distancia entre el sensor y la superficie de los residuos.</p></article>
+    <article class="paso"><span>02</span><div class="icono">🧠</div><h2>Proceso</h2><p>El microcontrolador interpreta la distancia y estima si la caneca está vacía, a media capacidad o casi llena.</p></article>
+    <article class="paso"><span>03</span><div class="icono">🚨</div><h2>Salida</h2><p>Se activa una alerta visual y/o sonora según el nivel detectado para indicar que la caneca necesita atención.</p></article>
+  </div>
+</section>
+<section class="seccion fondo-suave">
+  <div class="titulo-seccion"><p class="etiqueta">PRUEBA INTERACTIVA</p><h2>Simula el nivel de llenado</h2><p>Mueve el control para observar cómo cambiaría la alerta. Esta demostración no está conectada a un sensor real.</p></div>
+  <div class="simulador tarjeta">
+    <label for="nivelSlider">Nivel simulado: <strong id="nivelValor">35%</strong></label>
+    <input type="range" id="nivelSlider" min="0" max="100" value="35">
+    <div class="medidor"><div class="medidor-relleno" id="medidorRelleno"></div><div class="medidor-marca"></div></div>
+    <div class="estado estado-normal" id="estadoNivel"><span class="estado-punto"></span><div><strong id="estadoTitulo">Nivel normal</strong><p id="estadoTexto">La caneca todavía tiene espacio disponible.</p></div></div>
+    <button class="boton" id="probarAlerta">Probar alerta</button>
+    <p class="nota" id="mensajeAlerta" aria-live="polite">Ajusta el nivel o pulsa “Probar alerta”.</p>
+  </div>
+</section>
+<section class="seccion"><h2>Componentes principales</h2><div class="tarjetas tres"><article class="tarjeta"><div class="icono">📡</div><h3>Sensor ultrasónico</h3>
+
+<img src="imagenes/sensor_ultrasonico.jpg"
+     alt="Sensor ultrasónico"
+     class="foto-proyecto">
+
+<p>Obtiene la distancia hasta la superficie de los residuos.</p></article><article class="tarjeta"><div class="icono">🔌</div><h3>Microcontrolador</h3><p>Procesa la lectura del sensor y decide qué alerta corresponde.</p></article><article class="tarjeta"><div class="icono">💡</div><h3>Alertas visuales y sonoras</h3><p>Luces y sonido pueden avisar cuando la caneca esté próxima a llenarse.</p></article></div></section>
+</main><footer class="pie"><p>© 2026 EcoBin Quibdó · Proyecto STEM · Grado 1106</p></footer></body></html>
